@@ -130,11 +130,13 @@ const Shortener = () => {
 
   const title = !link && (
     <H1 fontSize={[25, 27, 32]} light>
-      Kutt your links{" "}
-      <Span style={{ borderBottom: "2px dotted #999" }} light>
-        shorter
-      </Span>
-      .
+      Controls{" "}
+      <a href="https://blog.anpig.me">
+        <Span style={{ borderBottom: "2px dotted #999" }} light>
+          Amaterasu
+        </Span>
+      </a>
+      flames.
     </H1>
   );
 
