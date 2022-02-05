@@ -44,7 +44,7 @@ const LogoImage = styled.div`
   }
 
   img {
-    width: 18px;
+    width: 32px;
     margin-right: 11px;
   }
 `;
@@ -110,40 +110,10 @@ const Header: FC = () => {
               if (window.location.pathname !== "/") Router.push("/");
             }}
           >
-            <img src="/images/logo.svg" alt="" width="150"/>
+            <img src="/images/logo.svg" alt=""/>
             {publicRuntimeConfig.SITE_NAME}
           </a>
         </LogoImage>
-        {!isMobile && (
-          <Flex
-            style={{ listStyle: "none" }}
-            display={["none", "flex"]}
-            alignItems="flex-end"
-            as="ul"
-            mb="3px"
-            m={0}
-            p={0}
-          >
-            <Li>
-              <ALink
-                href="//github.com/thedevs-network/kutt"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="GitHub"
-                fontSize={[14, 16]}
-              >
-                GitHub
-              </ALink>
-            </Li>
-            <Li>
-              <Link href="/report">
-                <ALink href="/report" title="Report abuse" fontSize={[14, 16]}>
-                  Report
-                </ALink>
-              </Link>
-            </Li>
-          </Flex>
-        )}
       </Flex>
       <RowCenterV
         m={0}
