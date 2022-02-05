@@ -131,9 +131,11 @@ const Shortener = () => {
   const title = !link && (
     <H1 fontSize={[25, 27, 32]} light>
       Controls{" "}
-      <Span href="https://blog.anpig.me" style={{ borderBottom: "2px dotted #999" }} light>
-        Amaterasu
-      </Span>
+      <a href="https://blog.anpig.me" style={{ textDecoration: 'none' }}>
+        <Span style={{ borderBottom: "2px dotted #999" }} light>
+          Amaterasu
+        </Span>
+      </a>
       {" "}flames.
     </H1>
   );
